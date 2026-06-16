@@ -1,0 +1,19 @@
+# left rotate
+
+def left_rot(arr, k):
+
+    length = len(arr)
+    temp = [0] * length
+     
+    for i in range(-k ,  length-k):
+        print(i)
+        temp[i] = arr[i+k]
+
+    for i in range(0, length):
+        arr[i] = temp[i]
+
+    return temp
+
+arr = [1,2,3,4,5]
+left_rot(arr, 2)
+print(arr)        
